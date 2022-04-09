@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": "10",
+      "name": "Kbutsho",
+      "company": "ABC",
+      "email": "kbutsho@gmail.com",
+      "title": "Programmer",
+      "mobile": "01749555864",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHUvOd8Q-VihyupbJCdgjIR2FxnjGtAgMu3g&usqp=CAU",
+      "groupId": "5"
+    },
+    {
+      "id": "2",
+      "name": "Kbutsho2",
+      "company": "DEF",
+      "email": "def@gmail.com",
+      "title": "Programmer",
+      "mobile": "017173443331",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSTblEVkkdJh15jlAbC3FpvuzCKb1o-pQQA&usqp=CAU",
+      "groupId": "4"
+    },
+    {
+      "name": "Kaushik Biswas",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7QR4UZof_8M7qVuVn7HXjiG2EyMPjkKjElQ&usqp=CAU",
+      "email": "admin1@gmail.com",
+      "mobile": "01749555864",
+      "company": "Gulf State Software",
+      "title": "SE",
+      "groupId": "6",
+      "id": "yadW_jd"
+    }
+  ],
+  "groups": [
+    {
+      "id": "3",
+      "name": "family"
+    },
+    {
+      "id": "4",
+      "name": "college"
+    },
+    {
+      "id": "5",
+      "name": "university"
+    },
+    {
+      "id": "6",
+      "name": "Office"
+    }
+  ]
+}

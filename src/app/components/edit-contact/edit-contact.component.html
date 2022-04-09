@@ -1,0 +1,46 @@
+<div class="container" style="min-height: 80vh;">
+    <h3 class="my-3 fw-bold text-danger">Edit Contact</h3>
+    <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio porro ipsum harum. Voluptates
+        pariatur minus consequatur cupiditate inventore, saepe vero, quo eum officiis magnam, odio eius ea mollitia
+        excepturi! Voluptate iusto veniam eius eveniet facilis mollitia voluptatum? Temporibus, reprehenderit
+        perspiciatis.</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-6">
+                    <form class="mb-5" (submit)="updateSubmit()">
+                        <input name="name" required="true" [(ngModel)]="contact.name" [value]="contact.name" type="text"
+                            placeholder="Name" class="form-control my-2">
+                        <input name="photo" required="true" [(ngModel)]="contact.photo" [value]="contact.photo"
+                            type="text" placeholder="Photo URL" class="form-control my-2">
+                        <input name="email" required="true" [(ngModel)]="contact.email" [value]="contact.email"
+                            type="text" placeholder="Email" class="form-control my-2">
+                        <input name="mobile" required="true" [(ngModel)]="contact.mobile" [value]="contact.mobile"
+                            type="text" placeholder="Mobile" class="form-control my-2">
+                        <input name="company" required="true" [(ngModel)]="contact.company" [value]="contact.company"
+                            type="text" placeholder="Company" class="form-control my-2">
+                        <input name="title" required="true" [(ngModel)]="contact.title" [value]="contact.title"
+                            type="text" placeholder="Title" class="form-control my-2">
+                            <select required="true" name="groupId" [(ngModel)]="contact.groupId" class="form-select"
+                            *ngIf="group.length > 0">
+                            <option *ngFor="let g of group" [value]="g.id">{{ g.name }}</option>
+                        </select>
+                        <div class="my-2">
+                            <button class="btn btn-sm btn-primary me-2">Update</button>
+                            <a routerLink="/contact/list" class="btn btn-sm btn-danger"> Back</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <img [src]="contact.photo"
+                        alt="" style="height: 150px; border-radius: 50%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <pre>{{ contactId }}</pre>
+<pre>{{ contact | json }}</pre>
+<pre>{{ group | json }}</pre> -->
