@@ -9,7 +9,7 @@ import { IContact } from '../models/IContact';
 })
 export class ContactService {
 
-  private serverUrl: string = `http://localhost:9000`;
+  private serverUrl: string = `http://localhost:4200`;
   constructor(private httpCLient: HttpClient) { }
   // get all contact
   public getAllContact(): Observable<IContact[]> {
